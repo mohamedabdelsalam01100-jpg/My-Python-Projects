@@ -37,8 +37,6 @@ flight_id = input("Enter flight id: ").strip().upper()
 tickets_num = int(input("Enter number of tickets: "))
 discount =int(input("enter your discount: "))
 
-passanger_info = (passanger_name, passport_num, flight_id)
-passanger_name, passport_num, flight_id = passanger_info
 
 booking = {
     "name": passanger_name,
@@ -47,8 +45,6 @@ booking = {
     "tickets": tickets_num
 }
 
-booking_list = []
-booking_list.append(booking)
 
 
 price = flights[flight_id].get("price")
